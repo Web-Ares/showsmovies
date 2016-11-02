@@ -1,0 +1,108 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  border: none;
+  min-width: 330px;
+  height: 65px;
+  padding: 0 45px;
+  margin: 0 0 21px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  @include main-font3();
+  font-size: 25px;
+  line-height: 25px;
+  background: rgb(52,196,46);
+  background: -moz-linear-gradient(top,  rgba(52,196,46,1) 0%, rgba(52,195,45,1) 23%, rgba(50,188,43,1) 47%, rgba(47,174,41,1) 75%, rgba(45,171,38,1) 89%, rgba(44,167,40,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(52,196,46,1) 0%,rgba(52,195,45,1) 23%,rgba(50,188,43,1) 47%,rgba(47,174,41,1) 75%,rgba(45,171,38,1) 89%,rgba(44,167,40,1) 100%);
+  background: linear-gradient(to bottom,  rgba(52,196,46,1) 0%,rgba(52,195,45,1) 23%,rgba(50,188,43,1) 47%,rgba(47,174,41,1) 75%,rgba(45,171,38,1) 89%,rgba(44,167,40,1) 100%);
+
+  &:hover {
+    background: rgb(44,167,40);
+    background: -moz-linear-gradient(top,  rgba(44,167,40,1) 0%, rgba(45,171,38,1) 11%, rgba(47,174,41,1) 25%, rgba(50,188,43,1) 53%, rgba(52,195,45,1) 77%, rgba(52,196,46,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(44,167,40,1) 0%,rgba(45,171,38,1) 11%,rgba(47,174,41,1) 25%,rgba(50,188,43,1) 53%,rgba(52,195,45,1) 77%,rgba(52,196,46,1) 100%);
+    background: linear-gradient(to bottom,  rgba(44,167,40,1) 0%,rgba(45,171,38,1) 11%,rgba(47,174,41,1) 25%,rgba(50,188,43,1) 53%,rgba(52,195,45,1) 77%,rgba(52,196,46,1) 100%);
+  }
+  &:active {
+    background: rgb(38, 146, 37);
+  }
+  &:after {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    width: 32px;
+    height: 32px;
+    background: url("../img/chrome.png") no-repeat;
+    background-size: cover;
+    content: '';
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  span {
+    @include flexbox();
+    @include flex-direction();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include align-items(center);
+    position: relative;
+    height: 100%;
+  }
+
+}
+.btn_2 {
+  min-width: 290px;
+  height: 59px;
+  font-size: 23px;
+  line-height: 23px;
+
+  &:after {
+    right: 9px;
+  }
+
+}
+.btn_3 {
+  min-width: 290px;
+  height: 59px;
+  font-size: 23px;
+  line-height: 23px;
+
+  &:after {
+    right: 9px;
+  }
+
+  span {
+
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 27px;
+      line-height: 27px;
+      margin: 24px 9px 0 -21px;
+      content: '+';
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+  }
+
+}
+.btn_color2 {
+  background: rgb(255,54,14);
+  background: -moz-linear-gradient(top,  rgba(255,54,14,1) 0%, rgba(255,53,13,1) 16%, rgba(253,54,15,1) 17%, rgba(248,52,14,1) 33%, rgba(244,50,12,1) 36%, rgba(243,51,14,1) 40%, rgba(225,47,11,1) 64%, rgba(224,47,13,1) 67%, rgba(216,46,11,1) 74%, rgba(201,42,12,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,54,14,1) 0%,rgba(255,53,13,1) 16%,rgba(253,54,15,1) 17%,rgba(248,52,14,1) 33%,rgba(244,50,12,1) 36%,rgba(243,51,14,1) 40%,rgba(225,47,11,1) 64%,rgba(224,47,13,1) 67%,rgba(216,46,11,1) 74%,rgba(201,42,12,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,54,14,1) 0%,rgba(255,53,13,1) 16%,rgba(253,54,15,1) 17%,rgba(248,52,14,1) 33%,rgba(244,50,12,1) 36%,rgba(243,51,14,1) 40%,rgba(225,47,11,1) 64%,rgba(224,47,13,1) 67%,rgba(216,46,11,1) 74%,rgba(201,42,12,1) 100%);
+
+  &:hover {
+    background: rgb(201,42,12);
+    background: -moz-linear-gradient(top,  rgba(201,42,12,1) 0%, rgba(216,46,11,1) 26%, rgba(224,47,13,1) 33%, rgba(225,47,11,1) 36%, rgba(243,51,14,1) 60%, rgba(244,50,12,1) 64%, rgba(248,52,14,1) 67%, rgba(253,54,15,1) 83%, rgba(255,53,13,1) 84%, rgba(255,54,14,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(201,42,12,1) 0%,rgba(216,46,11,1) 26%,rgba(224,47,13,1) 33%,rgba(225,47,11,1) 36%,rgba(243,51,14,1) 60%,rgba(244,50,12,1) 64%,rgba(248,52,14,1) 67%,rgba(253,54,15,1) 83%,rgba(255,53,13,1) 84%,rgba(255,54,14,1) 100%);
+    background: linear-gradient(to bottom,  rgba(201,42,12,1) 0%,rgba(216,46,11,1) 26%,rgba(224,47,13,1) 33%,rgba(225,47,11,1) 36%,rgba(243,51,14,1) 60%,rgba(244,50,12,1) 64%,rgba(248,52,14,1) 67%,rgba(253,54,15,1) 83%,rgba(255,53,13,1) 84%,rgba(255,54,14,1) 100%);
+  }
+  &:active {
+    background: rgb(201,42,12);
+  }
+
+}
